@@ -15,7 +15,7 @@ We can implement this external potential to any particle in OpenMM using
 energy_func = 'step(abs(x))*(step(f)*v+step(-f)*u);f=abs(x)-1/2;u=u0*g_dagger;v=v0*g_dagger;u0=-2*x^2;v0=2*(abs(x)-1)^2-1'
 force = CustomExternalForce(energy_func) 
 ```
-
+Remember to add this `force` to particle(s) using `force.addParticle(0, [])` and then to the whole system `system.addForce(force)`
 ## Requirements 
 ***Consulting OpenMM website for more details [http://docs.openmm.org/6.2.0/userguide/index.html]***
 
