@@ -1,4 +1,3 @@
-## Double-Well-Potential Simulation
 ## Requirements 
 ***Consulting OpenMM website for more details [http://docs.openmm.org/6.2.0/userguide/index.html]***
 
