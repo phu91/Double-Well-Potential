@@ -10,7 +10,7 @@ conda install -c conda-forge openmm
 ## Notes
 Default Units in OpenMM
 
-### Quantity	Units
+### Quantity	Units in OpenMM. Cannot be changed or NOT RECCOMENDATED TO CHANGE
 
 distance	   |   nm
 
