@@ -21,17 +21,17 @@ where
 ## Quantity	Units in OpenMM. 
 ### ***(Cannot be changed or NOT RECCOMENDATED TO CHANGE)***
 
-distance	   |   nm
+### distance	   |   nm
 
-time	       |   ps
+### time	       |   ps
 
-mass	       |   atomic mass units
+### mass	       |   atomic mass units
 
-charge	     |   proton charge
+### charge	     |   proton charge
 
-temperature |	  Kelvin
+### temperature |	  Kelvin
 
-angle	      |   radians
+### angle	      |   radians
 
-energy	     |   kJ/mol
+### energy	     |   kJ/mol
 
