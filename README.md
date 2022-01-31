@@ -3,11 +3,11 @@
 Utilizing OpenMM engine to simulate double well potential with overdamped Langevine dynamics or Brownian Dynamics. 
 
 ## Requirements 
+### ***Consulting OpenMM website for more details [http://docs.openmm.org/6.2.0/userguide/index.html]***
+
 OpenMM package. (Conda installation recommendation)
 
 `conda install -c conda-forge openmm`
-
-### ***Consulting OpenMM website for more details [http://docs.openmm.org/6.2.0/userguide/index.html]***
 
 ## Quantity	Units in OpenMM. 
 ### ***(Cannot be changed or NOT RECCOMENDATED TO CHANGE)***
