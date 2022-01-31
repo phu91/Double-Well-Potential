@@ -49,7 +49,7 @@ system.addParticle(1)  # added particle with a unit mass
 # of its x, y, and z coordinates
 print("Adding Force ...")
 g_dagger_value = 4	#kBT
-g_dagger=g_dagger_value*2.479 #kJ/mol
+g_dagger=g_dagger_value*2.479 # convert to kJ/mol so UNITS in OpenMM will not be conflicted 
 energy_func = 'step(abs(x))*(step(f)*v+step(-f)*u);f=abs(x)-1/2;u=u0*g_dagger;v=v0*g_dagger;u0=-2*x^2;v0=2*(abs(x)-1)^2-1'
 force = CustomExternalForce(energy_func) 
 force.addGlobalParameter("g_dagger",g_dagger)
