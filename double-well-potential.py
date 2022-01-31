@@ -1,4 +1,3 @@
-## Import
 from sys import stdout
 import numpy as np
 from simtk.openmm import *
