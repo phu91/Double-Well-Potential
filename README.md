@@ -1,4 +1,4 @@
-# Double-Well-Potential
+## Double-Well-Potential Simulation
  
 Utilizing OpenMM engine to simulate double well potential with overdamped Langevine dynamics or Brownian Dynamics. 
 
