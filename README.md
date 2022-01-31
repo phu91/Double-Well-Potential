@@ -5,10 +5,10 @@ Utilizing OpenMM engine to simulate double well potential with overdamped Langev
 ## Requirements 
 OpenMM package. (Conda installation recommendation)
 
-conda install -c conda-forge openmm
+'conda install -c conda-forge openmm'
 
 ## Quantity	Units in OpenMM. 
-### Cannot be changed or NOT RECCOMENDATED TO CHANGE
+### (Cannot be changed or NOT RECCOMENDATED TO CHANGE)
 
 distance	   |   nm
 
