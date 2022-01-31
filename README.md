@@ -6,3 +6,16 @@ Utilizing OpenMM engine to simulate double well potential with overdamped Langev
 OpenMM package. (Conda installation recommendation)
 
 conda install -c conda-forge openmm
+
+## Notes
+Default Units in OpenMM
+
+### Quantity	Units
+
+distance	   |   nm
+time	       |   ps
+mass	       |   atomic mass units
+charge	     |   proton charge
+temperature |	  Kelvin
+angle	      |   radians
+energy	     |   kJ/mol
