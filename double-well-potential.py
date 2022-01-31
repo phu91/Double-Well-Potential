@@ -48,10 +48,11 @@ system.addParticle(1)  # added particle with a unit mass
 # giving the potential energy of each particle as a function 
 # of its x, y, and z coordinates
 print("Adding Force ...")
-g_dagger=1
-energy_func = 'step(abs(x))*(step(f)*v+step(-f)*u);f=abs(x)-1/2;u=u0*'+str(g_dagger)+';v=v0*'+str(g_dagger)+';u0=-2*x^2;v0=2*(abs(x)-1)^2-1'
-
+g_dagger_value = 4	#kBT
+g_dagger=g_dagger_value*2.479 #kJ/mol
+energy_func = 'step(abs(x))*(step(f)*v+step(-f)*u);f=abs(x)-1/2;u=u0*g_dagger;v=v0*g_dagger;u0=-2*x^2;v0=2*(abs(x)-1)^2-1'
 force = CustomExternalForce(energy_func) 
+force.addGlobalParameter("g_dagger",g_dagger)
 force.addParticle(0, [])
 system.addForce(force)
 
