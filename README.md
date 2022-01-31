@@ -7,7 +7,8 @@ OpenMM package. (Conda installation recommendation)
 
 conda install -c conda-forge openmm
 
-## Quantity	Units in OpenMM. Cannot be changed or NOT RECCOMENDATED TO CHANGE
+## Quantity	Units in OpenMM. 
+### Cannot be changed or NOT RECCOMENDATED TO CHANGE
 
 distance	   |   nm
 
