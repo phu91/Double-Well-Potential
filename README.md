@@ -1,4 +1,4 @@
-Double-Well-Potential Simulation
+## Double-Well-Potential Simulation
 ## Requirements 
 ***Consulting OpenMM website for more details [http://docs.openmm.org/6.2.0/userguide/index.html]***
 
@@ -8,7 +8,8 @@ OpenMM package. (Conda installation recommendation)
 
 Utilizing OpenMM engine to simulate double well potential with overdamped Langevine dynamics or Brownian Dynamics. 
 
-For example, a symetric potential is given by a bistable matched-harmonic with 
+## Examplw
+A symetric potential is given by a bistable matched-harmonic with 
 <img src="https://latex.codecogs.com/svg.image?\bg_white&space;G_o(x)=\Delta&space;G^{\dagger}_o&space;f(x/x^{\dagger})" title="\bg_white G_o(x)=\Delta G^{\dagger}_o f(x/x^{\dagger})" />
 
 where 
