@@ -42,22 +42,20 @@ numerical = numerical_rate(data,time)
 
 bin_data = data.query('ps<=%s'%(selected_time))
 X =bin_data['x']
-jump_list = []
-relax_list = []
 
 peakind,_ = find_peaks(X,height=1)
 results_full = peak_widths(X, peakind, rel_height=1)
 prominences = peak_prominences(X, peakind)[0]
-print("The most prominence peak= %s"%(len(prominences)))
+#print("The most prominence peak= %s"%(len(prominences)))
 
 lag_time = np.linspace(0,5000,11)
 for j in lag_time:
-    jump_list2 = []
+    jump_list = []
     for i in range(len(results_full[0])):
         if results_full[0][i]>=j:
-            jump_list2.append(1)
+            jump_list.append(1)
         else:
-            jump_list2.append(0)
+            jump_list.append(0)
 
 
     # print("Python counts %s jumps in %s ps. Rate = %s. Stable time = %s"%(np.sum(jump_list2),numerical,np.sum(jump_list2)/numerical,j*0.02))
