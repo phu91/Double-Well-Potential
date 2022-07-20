@@ -61,17 +61,20 @@ system.addForce(force)
 ## Check system 
 # print(XmlSerializer.serialize(system))
 
-# Metadynamics 
+# Metadynamics
 script = """
-a: FIXEDATOM AT=1,0,0 
-d: DISTANCE ATOMS=a,1 
-# metad: METAD ...
-#    ARG=d SIGMA=1.2 HEIGHT=2 BIASFACTOR=20 TEMP=300.0 PACE=500 
-#    GRID_MIN=0 GRID_MAX=20 GRID_BIN=150
-#    CALC_RCT 
-# ...
-uwall: UPPER_WALLS ARG=d AT=20 KAPPA=150.0
-PRINT ARG=* STRIDE=10 FILE=2-2WElls/sim3/COLVAR
+a: FIXEDATOM AT=1,0,0
+d: DISTANCE ATOMS=a,1
+
+metad: METAD ...
+   ARG=d SIGMA=0.3 HEIGHT=0.2 BIASFACTOR=20 TEMP=300.0 PACE=500
+   GRID_MIN=-5 GRID_MAX=5 GRID_BIN=150
+   CALC_RCT
+   file=HILL
+...
+uwall: UPPER_WALLS ARG=d AT=5 KAPPA=2000.0
+lwall: LOWER_WALLS ARG=d AT=-5 KAPPA=2000.0
+PRINT ARG=* STRIDE=10 FILE=COLVAR
 
 """
 
